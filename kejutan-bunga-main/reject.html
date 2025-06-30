@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <style>
+        /* Resetting margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+            overflow: hidden;
+            background-image: linear-gradient(45deg, #ff4b6a, #ff8c00);
+            animation: gradient 5s ease infinite;
+        }
+
+        /* Keyframes for background gradient animation */
+        @keyframes gradient {
+            0% {
+                background-image: linear-gradient(45deg, #ff4b6a, #ff8c00);
+            }
+            50% {
+                background-image: linear-gradient(45deg, #1e90ff, #32cd32);
+            }
+            100% {
+                background-image: linear-gradient(45deg, #ff4b6a, #ff8c00);
+            }
+        }
+
+        /* Main container */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Slide-in animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Heading and message styling */
+        .message h1 {
+            font-size: 2.5rem;
+            color: #d9534f;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .message p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Button styling */
+        .button-container button {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .button-container button:hover {
+            background-color: #218838;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container button:active {
+            transform: translateY(2px);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            .message h1 {
+                font-size: 2rem;
+            }
+
+            .message p {
+                font-size: 1rem;
+            }
+
+            .button-container button {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">
+            <h1>Yahhh ditolak...</h1>
+            <p>Aku menerima apapun keputusan kamu, terimakasih udah mau baca semuanya dari awal.</p>
+            <p>Mungkin aku coba di kesempatan lain, dan harapannya dikesempatan itu kamu bisa benar-benar menerima aku &#128522;</p>
+        </div>
+        <div class="button-container">
+            <button onclick="window.history.back();">Kembali</button>
+        </div>
+    </div>
+
+</body>
+</html>

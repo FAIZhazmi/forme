@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengungkapan Perasaan</title>
+    <style>
+        /* Resetting margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #faff66, #66ffe0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+            font-size: 16px;
+            position: relative;
+        }
+
+        /* Main Container */
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 25px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            transform: scale(0.95);
+            position: relative;
+            z-index: 2;
+        }
+
+        .container:hover {
+            transform: scale(1);
+        }
+
+        /* Question Box */
+        .question-box {
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Question Text */
+        .question-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        /* Reject Button */
+        .reject-button, .accept-button {
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 240px;
+        }
+
+        .reject-button {
+            background: linear-gradient(135deg, #ff4d4d, #e60000);
+        }
+
+        .reject-button:hover {
+            background: linear-gradient(135deg, #ff3333, #cc0000);
+            transform: translateY(-3px);
+        }
+
+        .accept-button {
+            background: linear-gradient(135deg, #66cc66, #33cc33);
+        }
+
+        .accept-button:hover {
+            background: linear-gradient(135deg, #4dff4d, #00cc00);
+            transform: translateY(-3px);
+        }
+
+        /* FadeIn Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Moving Background Image */
+        .moving-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://pngimg.com/uploads/minions/minions_PNG10.png') no-repeat center center;
+            background-size: cover;
+            animation: moveBackground 20s linear infinite;
+            z-index: -1;
+        }
+
+        /* Animation for the moving background */
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Moving background image -->
+    <div class="moving-bg"></div> <!-- Using background image with animation -->
+
+    <div class="container">
+        <div class="question-box">
+            <h1 class="question-text">Would you be willing to take a chance on us and be my gf? I truly believe this could be something beautiful.</h1>
+        </div>
+        <div class="button-container">
+        <a href="reject.html">
+            <button class="reject-button">Maaf, nggk bisa</button>
+        </a>
+        <a href="Accepted.html">
+            <button class="accept-button">Iya, Aku mau</button>
+        </a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript not required for this background animation,
+        // but you can add events or interactivity here if needed.
+    </script>
+</body>
+</html>
